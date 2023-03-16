@@ -91,14 +91,12 @@ nav {
     background-size:cover;
     height: 990px;
     margin-top: -50px;
-   
-    
 }
 .p-intro{
     color: #09223e;
     font-size: 70px;
     font-family: pixo;
-    margin-left: 400px;
+    margin-left:400px ;
     padding-top: 300px;
 }
 
@@ -106,11 +104,7 @@ body{
 margin: 0;
 padding: 0;
 }
-.frame {
-  width: 90%;
-  margin: 40px auto;
-  text-align: center;
-}
+
 .custom-btn {
   color: #fff;
   width: 170px;
@@ -211,16 +205,9 @@ padding: 0;
   margin-bottom: 50px;
   padding-top: 160px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 #bodyproj {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: grid;
   place-items: center;
   background: #070f22;
@@ -358,7 +345,7 @@ main {
 }
 
 .pcont {
-  padding-left: 250px;
+ 
   padding-top: 70px;
   margin-bottom: 50px;
   color: #00b0d3;
@@ -367,7 +354,7 @@ main {
 
 .mail {
   width: 50px;
-  margin-left: 200px
+ 
 }
 
 .a-cv {
@@ -378,4 +365,46 @@ main {
 .d-cont {
   justify-content: center;
   justify-items: center;
+}
+.hr {
+  margin-bottom: 110px; width: 300px; margin-left: 802px; color: #59eafd; border: solid 1.9px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 350px){ 
+  .p-intro{
+    font-size: 45px;
+    margin-left: 150px;
+    padding-top: 200px;
+  }
+  .btn-7{
+    margin-left: 100px;
+  }
+  .hr {
+    margin-left: 0;
+  }
+  #Presentation{
+    height: 2000px;
+    background-size: 200px;
+    background-position-x: 100px;
+    background-position-y: 290px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 999px){ 
+  .p-intro{
+    font-size: 45px;
+    margin-left: 150px;
+    padding-top: 200px;
+  }
+  .btn-7{
+    margin-left: 100px;
+  }
+  .hr {
+    margin-left: 0;
+  }
+  #Presentation{
+    height: 2000px;
+    background-size: 200px;
+    background-position-x: 100px;
+    background-position-y: 290px;
+  }
 }
