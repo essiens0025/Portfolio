@@ -43,7 +43,7 @@ nav {
   letter-spacing: 1px;
   font-weight: bold;
   font-family: futu;
-  font-size: 22px;
+  font-size: 17px;
   position: relative;
 }
 
@@ -178,6 +178,68 @@ padding: 0;
   height: 100%;
 }
 .btn-7 span:hover:after {
+  width: 100%;
+}
+.btn-8 {
+  color: #21ebff;
+  line-height: 40px;
+  padding: 0;
+  border: none;
+  margin-left: 400px;
+  margin-top: 30px;
+}
+.btn-8 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-8:before,
+.btn-8:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #21ebff;
+  box-shadow: 0 0 5px #21ebff;
+  transition: all 0.3s ease;
+}
+.btn-8:before{
+   height: 50%;
+   width: 2px;
+}
+.btn-8:after {
+  width: 20%;
+  height: 2px;
+}
+.btn-8:hover:before {
+  height: 100%;
+}
+.btn-8:hover:after {
+  width: 100%;
+}
+.btn-8 span:before,
+.btn-8 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #21ebff;
+  box-shadow: 0 0 5px #21ebff;
+  transition: all 0.3s ease;
+}
+.btn-8 span:before {
+  width: 2px;
+  height: 50%;
+}
+.btn-8 span:after {
+  height: 2px;
+  width: 20%;
+}
+.btn-8 span:hover:before {
+  height: 100%;
+}
+.btn-8 span:hover:after {
   width: 100%;
 }
 
@@ -363,48 +425,274 @@ main {
 }
 
 .d-cont {
-  justify-content: center;
-  justify-items: center;
+  display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: flex-end;
 }
 .hr {
   margin-bottom: 110px; width: 300px; margin-left: 802px; color: #59eafd; border: solid 1.9px;
 }
+.hr2 {
+  margin-bottom: 110px; width: 300px; margin-left: 802px; color: #59eafd; border: solid 1.9px;
+}
 
-@media screen and (min-width: 0px) and (max-width: 350px){ 
+@media screen and (min-width: 300px) and (max-width: 350px){ 
   .p-intro{
-    font-size: 45px;
-    margin-left: 150px;
-    padding-top: 200px;
+    font-size: 35px;
+    margin-left: 10px;
+    padding-top: 300px;
+  }
+  nav{
+    position:absolute;
+    top: 30px;
+  }
+  .nav-links {
+    width: 98%;
   }
   .btn-7{
     margin-left: 100px;
   }
   .hr {
-    margin-left: 0;
+    margin-left: 20px;
+  }
+  .hr2{
+    margin-left: 10px;
   }
   #Presentation{
-    height: 2000px;
-    background-size: 200px;
-    background-position-x: 100px;
-    background-position-y: 290px;
+    height: 1700px;
+    background-size: 400px;
+    background-position-x: 0px;
+    background-position-y: 1000px;
+  }
+  .hpres{
+    font-size: 35px;
+  }
+  .hproj{
+    font-size: 40px;
+    padding-right: 180px;
+  }
+  .ppres{
+    padding-left: 17px;
+  }
+  .pcont{
+    text-align: center;
+    font-size: 23px;
+  }
+  #bodyproj {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: #070f22;
+  }
+  
+  main {
+    width: 100%;
+    display: grid;
+    place-items:initial;
+    padding: 4rem;
+    
+  }
+  
+  .cards {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .d-cont{
+    display: flexbox;
+    justify-content: center;
+  }
+  .btn-8 {
+    color: #21ebff;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+ 
+}
+@media screen and (min-width: 350px) and (max-width: 500px){ 
+  .p-intro{
+    font-size: 41px;
+    margin-left: 10px;
+    padding-top: 300px;
+  }
+  nav{
+    position:absolute;
+    top: 30px;
+  }
+  .nav-links {
+    width: 98%;
+  }
+  .btn-7{
+    margin-left: 100px;
+  }
+  .hr {
+    margin-left: 38px;
+  }
+  .hr2{
+    margin-left: 10px;
+    padding-left: 400px;
+  }
+  #Presentation{
+    height: 1520px;
+    background-size: 400px;
+    background-position-x: 0px;
+    background-position-y: 1000px;
+  }
+  .hpres{
+    font-size: 41px;
+    padding-right: 0px;
+  }
+  .hproj{
+    font-size: 41px;
+    padding-right: 150px;
+  }
+  .ppres{
+    padding-left: 0px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    display: flexbox;
+    justify-content: center ;
+  }
+  .pcont{
+    text-align: center;
+  }
+  #bodyproj {
+    width: 120%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: #070f22;
+  }
+  
+  main {
+    width: 100%;
+    display: grid;
+    place-items:initial;
+    padding: 4rem;
+    
+  }
+  
+  .cards {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #Contact{
+    width: 180%;
+  }
+  #intro {
+    width: 180%;
+  }
+  #Presentation{
+    width: 105%;
+  }
+  .h1cont{
+    font-size: 40px;
+    padding-right: 280px;
+  }
+  .pcont{
+    font-size: 28px;
+    padding-right: 280px;
+  }
+  .d-cont{
+    display: flexbox;
+    justify-content: center;
+  }
+  .btn-8 {
+    color: #21ebff;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+    margin-left: 0px;
+    margin-top: 30px;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 999px){ 
+@media screen and (min-width: 500px) and (max-width: 750px){ 
   .p-intro{
     font-size: 45px;
-    margin-left: 150px;
-    padding-top: 200px;
+    margin-left: 50px;
+    padding-top: 300px;
+  }
+  nav{
+    position:absolute;
+    top: 30px;
+  }
+  .nav-links {
+    width: 98%;
   }
   .btn-7{
     margin-left: 100px;
   }
   .hr {
-    margin-left: 0;
+    margin-left: 135px;
+  }
+  .hr2{
+    margin-left: 10px;
   }
   #Presentation{
-    height: 2000px;
-    background-size: 200px;
-    background-position-x: 100px;
-    background-position-y: 290px;
+    width: 102%;
+    height: 1700px;
+    background-size: 400px;
+    background-position-x: 87px;
+    background-position-y: 1000px;
+  }
+  .ppres{
+    padding-left: 17px;
+  }
+  .pcont{
+    text-align: center;
+  }
+  #bodyproj {
+  width: 102%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #070f22;
+}
+
+main {
+  width: 80%;
+  display: grid;
+  place-items:initial;
+  padding: 4rem;
+  
+}
+
+.cards {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#Contact{
+  width: 102%;
+}
+#intro {
+  width: 102%;
+}
+}
+@media screen and (min-width: 1700px) and (max-width: 2000px){
+
+  .hr2{
+    margin-left: 0px;
+  }
+  .hr{
+    margin-left: 780px;
+  }
+  .d-cont {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: flex-end;
   }
 }
